@@ -24,6 +24,6 @@ con.on('open', () => {
     console.log('connected...');
 })
 
-app.listen(700, () => {
+app.listen(3000, () => {
     console.log('server started')
 })
