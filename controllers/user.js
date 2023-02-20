@@ -22,8 +22,8 @@ exports.createUser = async (req, res) => {
         password: req.body.password,*/
     })
     try {
-        const a1 = await alien.save()
-        res.json({ success: true, a1 })
+        const user = await alien.save()
+        res.json({ success: true, user })
     } catch (err) {
         res.send('Error' + err)
     }
