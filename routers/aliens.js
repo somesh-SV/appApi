@@ -27,7 +27,7 @@ router.post('/sign-in',validateUserSignIn,userValidation, userSignIn)
 
 router.post('/upload-profile',isAuth,uploads.single('profile'),uploadProfile)
 
-router.post('/sign-out', isAuth, signOut)
+router.get('/sign-out', isAuth, signOut)
 
 router.get('/profile',isAuth,(req,res)=>{
     if(!req.user)
